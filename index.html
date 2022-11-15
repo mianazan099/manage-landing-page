@@ -9,68 +9,169 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Manage landing page</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Mian Azan communication.</h1>
-    <p>Is the Best.</p>
-    <!-- Pricing -->
-    <!-- Product -->
-    <!-- About Us -->
-    <!-- Careers -->
-    <!-- Community -->
-    <!-- Get Started -->
-    <!-- Bring everyone together to build better products. -->
-    <!-- Manage makes it simple for software teams to plan day-to-day  -->
-    <!-- tasks while keeping the larger team goals in view. -->
-    <!-- Get Started -->
-    <!-- What’s different about Manage? -->
-    <!-- Manage provides all the functionality your team needs, without  -->
-    <!-- the complexity. Our software is tailor-made for modern digital  -->
-    <!-- product teams.  -->
-    <!-- 01 -->
-    <!-- Track company-wide progress -->
-    <!-- See how your day-to-day tasks fit into the wider vision. Go from  -->
-    <!-- tracking progress at the milestone level all the way done to the  -->
-    <!-- smallest of details. Never lose sight of the bigger picture again. -->
-    <!-- 02 -->
-    <!-- Advanced built-in reports -->
-    <!-- Set internal delivery estimates and track progress toward company  -->
-    <!-- goals. Our customisable dashboard helps you build out the reports  -->
-    <!-- you need to keep key stakeholders informed. -->
-    <!-- 03 -->
-    <!-- Everything you need in one place -->
-    <!-- Stop jumping from one service to another to communicate, store files,  -->
-    <!-- track tasks and share documents. Manage offers an all-in-one team  -->
-    <!-- productivity solution. -->
-    <!-- What they’ve said -->
-    <!-- Anisha Li -->
-    <!-- “Manage has supercharged our team’s workflow. The ability to maintain  -->
-    <!-- visibility on larger milestones at all times keeps everyone motivated.” -->
-    <!-- Ali Bravo -->
-    <!-- “We have been able to cancel so many other subscriptions since using  -->
-    <!-- Manage. There is no more cross-channel confusion and everyone is much  -->
-    <!-- more focused.” -->
-    <!-- Richard Watts -->
-    <!-- “Manage allows us to provide structure and process. It keeps us organized  -->
-    <!-- and focused. I can’t stop recommending them to everyone I talk to!” -->
-    <!-- Shanai Gough -->
-    <!-- “Their software allows us to track, manage and collaborate on our projects  -->
-    <!-- from anywhere. It keeps the whole team in-sync without being intrusive.” -->
-    <!-- Get Started -->
-    <!-- Simplify how your team works today. -->
-    <!-- Get Started -->
-    <!-- Home -->
-    <!-- Pricing -->
-    <!-- Products -->
-    <!-- About Us -->
-    <!-- Careers -->
-    <!-- Community -->
-    <!-- Privacy Policy -->
-    <!-- Updates in your inbox… -->
-    <!-- Go -->
-    <!-- Copyright 2020. All Rights Reserved -->
+    <header class="primary-header">
+      <div class="container">
+        <a href="#"><img src="./images/logo.svg" alt="manage" /></a>
+        <nav class="primary-navigation">
+          <ul aria-label="primary" role="list" class="nav-list">
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </nav>
+        <button class="button">Get Started</button>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="even-columns">
+            <div>
+              <h1 class="fs-primary-heading fw-bold">
+                Bring everyone together to build better products.
+              </h1>
+              <p>
+                Manage makes it simple for software teams to plan day-to-day
+                tasks while keeping the larger team goals in view.
+              </p>
+              <button class="button">Get Started</button>
+            </div>
+            <div>
+              <img src="./images/illustration-intro.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="even-columns">
+            <div>
+              <h2 class="fs-secondary-heading fw-bold">
+                What’s different about Manage?
+              </h2>
+              <p>
+                Manage provides all the functionality your team needs, without
+                the complexity. Our software is tailor-made for modern digital
+                product teams.
+              </p>
+            </div>
+            <div>
+              <ul class="numbered-items" role="list">
+                <li>
+                  <!-- 01 -->
+                  <h3 class="fs-600 fw-bold">Track company-wide progress</h3>
+                  <p>
+                    See how your day-to-day tasks fit into the wider vision. Go
+                    from tracking progress at the milestone level all the way
+                    done to the smallest of details. Never lose sight of the
+                    bigger picture again.
+                  </p>
+                </li>
+                <li>
+                  <!-- 02 -->
+                  <h3 class="fs-600 fw-bold">Advanced built-in reports</h3>
+                  <p>
+                    Set internal delivery estimates and track progress toward
+                    company goals. Our customisable dashboard helps you build
+                    out the reports you need to keep key stakeholders informed.
+                  </p>
+                </li>
+                <li>
+                  <!-- 03 -->
+                  <h3 class="fs-600 fw-bold">
+                    Everything you need in one place
+                  </h3>
+                  <p>
+                    Stop jumping from one service to another to communicate,
+                    store files, track tasks and share documents. Manage offers
+                    an all-in-one team productivity solution.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="carousel">
+        <h2 class="fs-secondary-heading fw-bold">What they’ve said</h2>
+        <!-- Anisha Li -->
+        <!-- “Manage has supercharged our team’s workflow. The ability to maintain  -->
+        <!-- visibility on larger milestones at all times keeps everyone motivated.” -->
+        <!-- Ali Bravo -->
+        <!-- “We have been able to cancel so many other subscriptions since using  -->
+        <!-- Manage. There is no more cross-channel confusion and everyone is much  -->
+        <!-- more focused.” -->
+        <!-- Richard Watts -->
+        <!-- “Manage allows us to provide structure and process. It keeps us organized  -->
+        <!-- and focused. I can’t stop recommending them to everyone I talk to!” -->
+        <!-- Shanai Gough -->
+        <!-- “Their software allows us to track, manage and collaborate on our projects  -->
+        <!-- from anywhere. It keeps the whole team in-sync without being intrusive.” -->
+        <button class="button">Get Started</button>
+      </section>
+      <section class="cta bg-accent-400 text-neutral-100">
+        <div class="container">
+          <div class="even-container">
+            <div>
+              <p class="fs-secondary-heading fw-bold">
+                Simplify how your team works today.
+              </p>
+            </div>
+            <div>
+              <button class="button" data-type="inverted">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-neutral-900 text-neutral-100">
+      <div class="container">
+        <div class="even-columns">
+          <div>
+            <a href="#"><img src="./images/logo.svg" alt="manage" /></a>
+            <ul role="list" aria-label="social links">
+              <li><a aria-label="facebook" href="#"></a></li>
+              <li><a aria-label="youtube" href="#"></a></li>
+              <li><a aria-label="twitter" href="#"></a></li>
+              <li><a aria-label="pinterest" href="#"></a></li>
+              <li><a aria-label="instagram" href="#"></a></li>
+            </ul>
+          </div>
+          <div>
+            <nav class="footer-nav">
+              <ul aria-label="footer" role="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <form action="">
+              <input type="email" placeholder="Updates in your inbox…" />
+              <button class="button">Go</button>
+              <p>Copyright 2020. All Rights Reserved</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>
