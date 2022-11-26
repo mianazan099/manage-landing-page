@@ -18,14 +18,17 @@
     <title>Frontend Mentor | Manage landing page</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body data-navOpen="false">
     <header class="primary-header">
       <div style="--px: var(--size-500)" class="container">
         <a class="nav-logo" href="#"
           ><img src="./images/logo.svg" alt="manage"
         /></a>
-        <nav class="primary-nav" data-nav="open">
-          <ul aria-label="primary" role="list" class="nav-list">
+        <button class="menu-btn">
+          <img src="./images/icon-hamburger.svg" alt="menu-icon" />
+        </button>
+        <nav class="primary-nav">
+          <ul aria-label="primary" role="list">
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Product</a></li>
             <li><a href="#">About Us</a></li>
@@ -37,32 +40,30 @@
       </div>
     </header>
     <main>
-      <!-- <section>
-        <div class="container">
-          <div class="even-columns">
-            <div>
-              <h1 class="fs-primary-heading fw-bold">
+      <section class="hero-section">
+        <div style="--px: var(--size-600)" class="container">
+          <div style="--gap: var(--size-600)" class="even-columns">
+            <div class="hero-image">
+              <img src="./images/illustration-intro.svg" alt="" />
+            </div>
+            <div class="hero-content">
+              <h1 class="fw-bold">
                 Bring everyone together to build better products.
               </h1>
               <p>
                 Manage makes it simple for software teams to plan day-to-day
                 tasks while keeping the larger team goals in view.
               </p>
-              <button class="button">Get Started</button>
-            </div>
-            <div>
-              <img src="./images/illustration-intro.svg" alt="" />
+              <button class="btn btn-primary">Get Started</button>
             </div>
           </div>
         </div>
-      </section> -->
-      <!-- <section>
+      </section>
+      <section class="about">
         <div class="container">
           <div class="even-columns">
-            <div>
-              <h2 class="fs-secondary-heading fw-bold">
-                What’s different about Manage?
-              </h2>
+            <div style="--px: var(--size-400)" class="container about-content">
+              <h2 class="fw-bold">What’s different about Manage?</h2>
               <p>
                 Manage provides all the functionality your team needs, without
                 the complexity. Our software is tailor-made for modern digital
@@ -72,7 +73,7 @@
             <div>
               <ul class="numbered-items" role="list">
                 <li>
-                  01
+                  <!-- 01 -->
                   <h3 class="fs-600 fw-bold">Track company-wide progress</h3>
                   <p>
                     See how your day-to-day tasks fit into the wider vision. Go
@@ -82,7 +83,7 @@
                   </p>
                 </li>
                 <li>
-                  02
+                  <!-- 02 -->
                   <h3 class="fs-600 fw-bold">Advanced built-in reports</h3>
                   <p>
                     Set internal delivery estimates and track progress toward
@@ -91,7 +92,7 @@
                   </p>
                 </li>
                 <li>
-                  03
+                  <!-- 03 -->
                   <h3 class="fs-600 fw-bold">
                     Everything you need in one place
                   </h3>
@@ -105,7 +106,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="carousel"> -->
       <!-- <h2 class="fs-secondary-heading fw-bold">What they’ve said</h2> -->
       <!-- Anisha Li -->
