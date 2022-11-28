@@ -281,9 +281,6 @@ body[data-navOpen="true"]::before {
 
 .hero-section {
   text-align: center;
-}
-
-.hero-section > .container {
   padding-block: var(--size-700);
 }
 
@@ -302,15 +299,50 @@ body[data-navOpen="true"]::before {
 /* About */
 
 .about-section {
+  padding-block: var(--size-600);
 }
 
 .about-content {
   text-align: center;
+  margin-bottom: var(--size-600);
 }
 .about-content h2 {
   font-size: var(--fs-600);
+  margin-bottom: var(--size-400);
+}
+.about-content p {
+  font-size: var(--fs-300);
+  color: var(--clr-neutral-400);
+  line-height: 1.8;
 }
 
-.about-content p {
-  font-size: var(--fs-600);
+/* .about-info {} */
+/* .about-info .numbered-items {} */
+.about-info .numbered-items {
+  display: grid;
+  gap: var(--size-700);
+}
+/* .about-info .numbered-items li {} */
+.about-info .numbered-items li div {
+  display: flex;
+  align-items: center;
+  background-color: var(--clr-accent-100);
+  gap: var(--size-400);
+  box-shadow: 100px 0 var(--clr-accent-100);
+  margin-bottom: var(--size-400);
+}
+.about-info .numbered-items li div span {
+  padding: var(--size-200) var(--size-500);
+  background-color: var(--clr-accent-400);
+  font-weight: var(--fw-bold);
+  color: var(--clr-neutral-100);
+  border-radius: 999px;
+}
+.about-info .numbered-items li div h3 {
+  letter-spacing: -0.5px;
+}
+.about-info .numbered-items li p {
+  font-size: var(--fs-300);
+  line-height: 1.8;
+  color: var(--clr-neutral-400);
 }
