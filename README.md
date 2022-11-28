@@ -1,5 +1,6 @@
-- [ ] Write simple HTML
-- [ ] Setup CSS Variables
+- [X] Write simple HTML
+- [X] Setup CSS Variables
+- [X] Add CSS Reset
 - [ ] Write General Styles
 - [ ] Setup Utility Classes
 - [ ] Add Classes to HTML using BEM

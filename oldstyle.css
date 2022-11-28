@@ -1,0 +1,348 @@
+:root {
+  --clr-primary-400: hsl(228, 39%, 23%);
+
+  --clr-accent-100: hsl(13, 100%, 96%);
+  --clr-accent-400: hsl(12, 88%, 59%);
+
+  --clr-neutral-100: hsl(0, 0%, 98%);
+  --clr-neutral-400: hsl(227, 12%, 61%);
+  --clr-neutral-900: hsl(233, 12%, 13%);
+
+  --ff-primary: "Be Vietnam Pro", sans-serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-regular: 400;
+  --fw-semibold: 500;
+  --fw-bold: 700;
+
+  --fs-300: 0.875rem;
+  --fs-400: 1rem;
+  --fs-500: 1.125rem;
+  --fs-600: 1.75rem;
+  --fs-700: 2.5rem;
+  --fs-800: 3.25rem;
+
+  --size-100: 0.25rem;
+  --size-200: 0.5rem;
+  --size-300: 0.75rem;
+  --size-400: 1rem;
+  --size-500: 1.5rem;
+  --size-600: 2rem;
+  --size-700: 3rem;
+  --size-800: 4rem;
+}
+
+/* RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility Classes */
+
+.text-primary-400 {
+  color: var(--clr-primary-400);
+}
+.text-accent-100 {
+  color: var(--clr-accent-100);
+}
+.text-accent-400 {
+  color: var(--clr-accent-400);
+}
+.text-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+.text-neutral-400 {
+  color: var(--clr-neutral-400);
+}
+.text-neutral-900 {
+  color: var(--clr-neutral-900);
+}
+
+.bg-primary-400 {
+  background-color: var(--clr-primary-400);
+}
+.bg-accent-100 {
+  background-color: var(--clr-accent-100);
+}
+.bg-accent-400 {
+  background-color: var(--clr-accent-400);
+}
+.bg-neutral-100 {
+  background-color: var(--clr-neutral-100);
+}
+.bg-neutral-400 {
+  background-color: var(--clr-neutral-400);
+}
+.bg-neutral-900 {
+  background-color: var(--clr-neutral-900);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+.fw-semibold {
+  font-weight: var(--fw-semibold);
+}
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.ff-body {
+  font-family: var(--ff-body);
+}
+.ff-heading {
+  font-family: var(--ff-heading);
+}
+
+.container {
+  --max-width: 1110px;
+  --px: 1rem;
+  width: min(var(--max-width), 100% - (var(--px) * 2));
+  margin-inline: auto;
+}
+
+.even-columns {
+  --gap: 1rem;
+  display: grid;
+  gap: var(--gap);
+}
+
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+/* General Styling */
+
+body {
+  font-size: var(--fs-400);
+  font-family: var(--ff-body);
+  color: var(--clr-primary-400);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-heading);
+  line-height: 1.2;
+}
+
+/* Components Styling */
+
+.btn {
+  padding: var(--size-400) var(--size-600);
+  border-radius: 999px;
+  border: none;
+  line-height: var(--size-400);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-semibold);
+  box-shadow: 0 12px 10px -8px var(--shadow-color);
+}
+
+.btn-primary {
+  --shadow-color: var(--clr-accent-400);
+  background-color: var(--clr-accent-400);
+  color: var(--clr-neutral-100);
+}
+
+.btn-secondary {
+  --shadow-color: var(--clr-neutral-400);
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-accent-400);
+}
+
+/* Start Styling */
+
+.primary-header {
+  padding-top: var(--size-600);
+  position: relative;
+}
+
+.primary-header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.primary-nav {
+  background-color: var(--clr-neutral-100);
+  position: absolute;
+  inset-inline: 6vmin;
+  inset-block-start: calc(100% + var(--size-600));
+  z-index: 1;
+  text-align: center;
+  padding-block: var(--size-600);
+  border-radius: var(--size-100);
+  display: none;
+}
+
+.primary-nav ul {
+  display: grid;
+  gap: var(--size-500);
+}
+
+.primary-nav ul li a {
+  text-decoration: none;
+  color: currentColor;
+  font-weight: var(--fw-bold);
+}
+
+.nav-btn {
+  display: none;
+}
+
+body[data-navOpen="true"] {
+  overflow: hidden;
+}
+
+body[data-navOpen="true"] .primary-nav {
+  display: block;
+}
+
+body[data-navOpen="true"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent, var(--clr-neutral-900));
+}
+
+/* Hero Section */
+
+.hero-section {
+  text-align: center;
+  padding-block: var(--size-700);
+}
+
+.hero-content > h1 {
+  font-size: var(--fs-700);
+  letter-spacing: -2px;
+  padding-bottom: var(--size-200);
+}
+
+.hero-content > p {
+  color: var(--clr-neutral-400);
+  line-height: 1.8;
+  padding-bottom: var(--size-600);
+}
+
+/* About */
+
+.about-section {
+  padding-block: var(--size-600);
+}
+
+.about-content {
+  text-align: center;
+  margin-bottom: var(--size-600);
+}
+.about-content h2 {
+  font-size: var(--fs-600);
+  margin-bottom: var(--size-400);
+}
+.about-content p {
+  font-size: var(--fs-300);
+  color: var(--clr-neutral-400);
+  line-height: 1.8;
+}
+
+/* .about-info {} */
+/* .about-info .numbered-items {} */
+.about-info .numbered-items {
+  display: grid;
+  gap: var(--size-700);
+}
+/* .about-info .numbered-items li {} */
+.about-info .numbered-items li div {
+  display: flex;
+  align-items: center;
+  background-color: var(--clr-accent-100);
+  gap: var(--size-400);
+  box-shadow: 100px 0 var(--clr-accent-100);
+  margin-bottom: var(--size-400);
+}
+.about-info .numbered-items li div span {
+  padding: var(--size-200) var(--size-500);
+  background-color: var(--clr-accent-400);
+  font-weight: var(--fw-bold);
+  color: var(--clr-neutral-100);
+  border-radius: 999px;
+}
+.about-info .numbered-items li div h3 {
+  letter-spacing: -0.5px;
+}
+.about-info .numbered-items li p {
+  font-size: var(--fs-300);
+  line-height: 1.8;
+  color: var(--clr-neutral-400);
+}
