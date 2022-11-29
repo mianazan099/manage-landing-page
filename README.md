@@ -1,9 +1,6 @@
-- [X] Write simple HTML
-- [X] Setup CSS Variables
-- [X] Add CSS Reset
-- [ ] Write General Styles
-- [ ] Setup Utility Classes
-- [ ] Add Classes to HTML using BEM
-- [ ] Start Styling
-  - [ ] Create a List of All Section
-  - [ ] Style Sections one-by-one
+- [ ] Navbar
+- [ ] Hero
+- [ ] About
+- [ ] Testimonial
+- [ ] CTA
+- [ ] Footer

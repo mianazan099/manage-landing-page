@@ -92,6 +92,7 @@ a {
 
 .bold {
   font-weight: 700;
+  color: var(--clr-primary-400);
 }
 
 .btn {
@@ -104,13 +105,13 @@ a {
   box-shadow: 0 12px 4px -6px var(--box-shadow);
 }
 
-.btn-primary {
+.btn--primary {
   --box-shadow: var(--clr-accent-100);
   color: var(--clr-neutral-100);
   background-color: var(--clr-accent-400);
 }
 
-.btn-secondary {
+.btn--secondary {
   --box-shadow: var(--clr-neutral-100);
   color: var(--clr-accent-400);
   background-color: var(--clr-neutral-100);
@@ -119,9 +120,62 @@ a {
 @media (min-width: 50rem) {
   .even-columns {
     display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
   }
 
   .even-columns > * {
     flex: 1;
   }
+}
+
+/* || STYLES */
+
+body {
+  text-align: center;
+}
+
+@media (min-width: 50rem) {
+  body {
+    text-align: start;
+  }
+}
+
+/* || NAVBAR */
+
+.navbar {
+  margin-top: clamp(2.5rem, calc(2rem + 2.15vw), 3.5rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  width: clamp(6.88rem, calc(5.68rem + 5.1vw), 9.25rem);
+}
+
+.navbar__menu-btn {
+}
+
+.nav {
+  display: none;
+}
+
+.nav__menu {
+}
+
+.nav__item {
+}
+
+.nav__link {
+}
+
+.navbar__cta {
+  display: none;
+}
+
+/* || HERO */
+
+.hero-section {
+  margin-block: clamp(3rem, calc(0.73rem + 9.66vw), 7.5rem);
 }
