@@ -1,7 +1,7 @@
 /* || HERO */
 
 .hero-section {
-  margin-block: clamp(3rem, calc(0.73rem + 9.66vw), 7.5rem);
+  margin-top: clamp(3rem, calc(0.73rem + 9.66vw), 7.5rem);
   gap: 32px;
 }
 
