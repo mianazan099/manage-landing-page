@@ -16,20 +16,23 @@
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/variable.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/utility.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Frontend Mentor | Manage landing page</title>
   </head>
-  <body>
+  <body data-navOpen="false">
     <header>
       <div style="--px: 1.5rem" class="navbar container">
         <div class="navbar__logo">
           <img src="./images/logo.svg" alt="logo" />
         </div>
-        <img
-          class="navbar__menu-btn"
-          src="./images/icon-hamburger.svg"
-          alt="navbar menu icon"
-        />
+        <button class="navbar__menu-btn">
+          <img src="./images/icon-hamburger.svg" alt="navbar menu icon" />
+        </button>
         <nav class="nav">
           <ul class="nav__menu" role="list">
             <li class="nav__item"><a class="nav__link" href="#">Pricing</a></li>
