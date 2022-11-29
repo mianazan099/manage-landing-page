@@ -1,0 +1,25 @@
+/* || HERO */
+
+.hero-section {
+  margin-block: clamp(3rem, calc(0.73rem + 9.66vw), 7.5rem);
+  gap: 32px;
+}
+
+.hero__heading {
+  margin-bottom: clamp(1rem, calc(0.37rem + 2.68vw), 2.25rem);
+}
+
+.hero__info {
+  margin-bottom: clamp(2rem, calc(1.69rem + 1.34vw), 2.63rem);
+  max-width: 32ch;
+  margin-inline: auto;
+}
+
+@media (min-width: 56rem) {
+  .hero-section {
+    flex-direction: row-reverse;
+  }
+  .hero__info {
+    margin-inline: 0;
+  }
+}
