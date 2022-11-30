@@ -86,3 +86,7 @@ body {
     max-width: 41.75ch;
   }
 }
+
+.testimonial-section {
+  margin-top: clamp(4.75rem, calc(2.17rem + 11.01vw), 9.88rem);
+}
