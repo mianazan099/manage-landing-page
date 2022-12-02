@@ -28,7 +28,7 @@
 }
 
 .btn--secondary {
-  --box-shadow: var(--clr-neutral-100);
+  --box-shadow: var(--clr-accent-400);
   color: var(--clr-accent-400);
   background-color: var(--clr-neutral-100);
 }
