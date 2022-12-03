@@ -21,7 +21,7 @@
   </head>
   <body data-navOpen="false">
     <header class="header">
-      <div style="--px: 1.5rem" class="container">
+      <div style="--px: 1.5rem" class="container flex">
         <div class="navbar__logo">
           <img src="./images/logo.svg" alt="logo" />
         </div>
@@ -29,7 +29,7 @@
           <img src="./images/icon-hamburger.svg" alt="navbar menu icon" />
         </button>
         <nav class="nav">
-          <ul class="nav__menu" role="list">
+          <ul class="nav__menu flex" role="list">
             <li class="nav__item"><a class="nav__link" href="#">Pricing</a></li>
             <li class="nav__item"><a class="nav__link" href="#">Product</a></li>
             <li class="nav__item">
@@ -74,9 +74,9 @@
           </div>
           <div class="about__feature-list">
             <div class="about__feature">
-              <p class="feature__heading">
+              <h3 class="feature__heading">
                 <span>01</span>Track company-wide progress
-              </p>
+              </h3>
               <p class="feature__info">
                 See how your day-to-day tasks fit into the wider vision. Go from
                 tracking progress at the milestone level all the way done to the
@@ -85,9 +85,9 @@
               </p>
             </div>
             <div class="about__feature">
-              <p class="feature__heading">
+              <h3 class="feature__heading">
                 <span>02</span>Advanced built-in reports
-              </p>
+              </h3>
               <p class="feature__info">
                 Set internal delivery estimates and track progress toward
                 company goals. Our customisable dashboard helps you build out
@@ -95,9 +95,9 @@
               </p>
             </div>
             <div class="about__feature">
-              <p class="feature__heading">
+              <h3 class="feature__heading">
                 <span>03</span>Everything you need in one place
-              </p>
+              </h3>
               <p class="feature__info">
                 Stop jumping from one service to another to communicate, store
                 files, track tasks and share documents. Manage offers an
@@ -108,7 +108,7 @@
         </div>
       </section>
       <section class="testimonial-section">
-        <div style="--px: 1.125rem" class="container grid">
+        <div style="--px: 1.125rem" class="container">
           <h2 class="testimonial__heading">What they've said</h2>
           <div class="testimonial__container">
             <div class="testimonial">
@@ -117,9 +117,9 @@
                 src="./images/avatar-anisha.png"
                 alt="avatar"
               />
-              <p class="testimonial__name">Anisha Li</p>
+              <h3 class="testimonial__name">Anisha Li</h3>
               <p class="testimonial__info">
-                “Manage has supercharged our team’s workflow. The ability to
+                “Manage has supercharged our team's workflow. The ability to
                 maintain visibility on larger milestones at all times keeps
                 everyone motivated.”
               </p>
@@ -130,7 +130,7 @@
                 src="./images/avatar-ali.png"
                 alt="avatar"
               />
-              <p class="testimonial__name">Ali Bravo</p>
+              <h3 class="testimonial__name">Ali Bravo</h3>
               <p class="testimonial__info">
                 “We have been able to cancel so many other subscriptions since
                 using Manage. There is no more cross-channel confusion and
@@ -143,10 +143,10 @@
                 src="./images/avatar-richard.png"
                 alt="avatar"
               />
-              <p class="testimonial__name">Richard Watts</p>
+              <h3 class="testimonial__name">Richard Watts</h3>
               <p class="testimonial__info">
                 “Manage allows us to provide structure and process. It keeps us
-                organized and focused. I can’t stop recommending them to
+                organized and focused. I can't stop recommending them to
                 everyone I talk to!”
               </p>
             </div>
@@ -156,7 +156,7 @@
                 src="./images/avatar-shanai.png"
                 alt="avatar"
               />
-              <p class="testimonial__name">Shanai Gough</p>
+              <h3 class="testimonial__name">Shanai Gough</h3>
               <p class="testimonial__info">
                 “Their software allows us to track, manage and collaborate on
                 our projects from anywhere. It keeps the whole team in-sync
@@ -188,13 +188,13 @@
           <p class="footer__copy">Copyright 2020. All Rights Reserved</p>
         </div>
         <div class="footer__link-container">
-          <ul class="footer__link-menu">
+          <ul class="footer__link-menu" role="list">
             <li class="footer__link"><a href="#">Home</a></li>
             <li class="footer__link"><a href="#">Pricing</a></li>
             <li class="footer__link"><a href="#">Products</a></li>
             <li class="footer__link"><a href="#">About Us</a></li>
           </ul>
-          <ul class="footer__link-menu">
+          <ul class="footer__link-menu" role="list">
             <li class="footer__link"><a href="#">Careers</a></li>
             <li class="footer__link"><a href="#">Community</a></li>
             <li class="footer__link"><a href="#">Privacy Policy</a></li>
@@ -224,6 +224,6 @@
         </div>
       </div>
     </footer>
-    <!-- <script src="./script.js"></script> -->
+    <script src="./script.js"></script>
   </body>
 </html>
