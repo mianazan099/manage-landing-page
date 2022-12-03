@@ -1,6 +1,1 @@
-- [ ] Navbar
-- [ ] Hero
-- [ ] About
-- [ ] Testimonial
-- [ ] CTA
-- [ ] Footer
+# Manage Landing Page
