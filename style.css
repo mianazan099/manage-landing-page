@@ -440,10 +440,6 @@ body[data-navOpen="true"] .nav {
 
 /* FOOTER */
 
-main {
-  display: none;
-}
-
 .footer {
   background-color: var(--clr-neutral-900);
   color: var(--clr-neutral-100);
@@ -508,7 +504,7 @@ main {
   gap: clamp(1.25rem, calc(2.38rem + -1.61vw), 2rem);
 }
 
-.footer__icon svg {
+.footer__icon img {
   min-width: clamp(1.25rem, calc(2.38rem + -1.61vw), 2rem);
 }
 
@@ -519,7 +515,7 @@ main {
 
 @media (min-width: 54rem) {
   .footer .container {
-    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
     gap: 2rem;
   }
 
