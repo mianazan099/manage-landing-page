@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Frontend Mentor | Manage landing page</title>
   </head>
@@ -108,10 +112,10 @@
         </div>
       </section>
       <section class="testimonial-section">
-        <div style="--px: 1.125rem" class="container">
-          <h2 class="testimonial__heading">What they've said</h2>
-          <div class="testimonial__container">
-            <div class="testimonial">
+        <h2 class="testimonial__heading">What they've said</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper testimonial__container">
+            <div class="swiper-slide testimonial">
               <img
                 class="testimonial__img"
                 src="./images/avatar-anisha.png"
@@ -124,7 +128,7 @@
                 everyone motivated.”
               </p>
             </div>
-            <div class="testimonial">
+            <div class="swiper-slide testimonial">
               <img
                 class="testimonial__img"
                 src="./images/avatar-ali.png"
@@ -137,7 +141,7 @@
                 everyone is much more focused.”
               </p>
             </div>
-            <div class="testimonial">
+            <div class="swiper-slide testimonial">
               <img
                 class="testimonial__img"
                 src="./images/avatar-richard.png"
@@ -150,7 +154,7 @@
                 everyone I talk to!”
               </p>
             </div>
-            <div class="testimonial">
+            <div class="swiper-slide testimonial">
               <img
                 class="testimonial__img"
                 src="./images/avatar-shanai.png"
@@ -164,8 +168,9 @@
               </p>
             </div>
           </div>
-          <button class="testimonial__btn btn btn--primary">Get Started</button>
+          <div class="swiper-pagination"></div>
         </div>
+        <button class="testimonial__btn btn btn--primary">Get Started</button>
       </section>
       <section class="cta-section">
         <div style="--px: 2rem" class="container grid">
@@ -227,6 +232,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

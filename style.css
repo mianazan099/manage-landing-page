@@ -356,38 +356,58 @@ body[data-navOpen="true"] .nav {
 }
 
 /* TESTIMONIAL */
-/* .testimonial-section { */
-/* margin-top: clamp(4.75rem, calc(2.17rem + 11.01vw), 9.88rem); */
-/* text-align: center; */
-/* } */
-/* .testimonial-section .container { */
-/* max-width: none; */
-/* } */
-/* .testimonial__heading { */
-/* margin-bottom: clamp(6.13rem, calc(5.81rem + 1.34vw), 6.75rem); */
-/* } */
-/* .testimonial__container { */
-/* width: 100%; */
-/* display: flex; */
-/* gap: 2rem; */
-/* } */
-/* .testimonial { */
-/* background-color: var(--clr-neutral-100); */
-/* padding-block: 4rem 3rem; */
-/* padding-inline: clamp(2rem, calc(1.5rem + 2.15vw), 3rem); */
-/* position: relative; */
-/* } */
-/* .testimonial__img { */
-/* height: 4.5rem; */
-/* width: 4.5rem; */
-/* position: absolute; */
-/* top: -2.25rem; */
-/* left: 50%; */
-/* transform: translateX(-50%); */
-/* } */
-/* .testimonial__name { margin-bottom: 2rem } */
-/* .testimonial__info { max-width: 42.75ch } */
-/* .testimonial__btn { margin-top: 3rem } */
+
+.testimonial-section {
+  margin-top: clamp(4.75rem, calc(2.17rem + 11.01vw), 9.88rem);
+  text-align: center;
+}
+.testimonial__container {
+  margin-top: clamp(6.13rem, calc(5.81rem + 1.34vw), 6.75rem);
+  margin-bottom: clamp(3rem, calc(6.01rem + -4.3vw), 5rem);
+}
+.testimonial {
+  background-color: var(--clr-neutral-100);
+  padding-block: 4rem 3rem;
+  padding-inline: clamp(2rem, calc(1.5rem + 2.15vw), 3rem);
+  position: relative;
+  width: calc(100% - 32px);
+}
+.testimonial__img {
+  height: 4.5rem;
+  width: 4.5rem;
+  position: absolute;
+  top: -2.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.testimonial__name {
+  margin-bottom: 1.25rem;
+}
+.testimonial__info {
+  max-width: 42.75ch;
+  margin-inline: auto;
+}
+.swiper-pagination {
+  bottom: 36px !important;
+}
+.swiper-pagination-bullet {
+  opacity: 1;
+  background-color: transparent !important;
+  border: 1px solid var(--clr-accent-400) !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--clr-accent-400) !important;
+}
+
+@media (min-width: 40rem) {
+  .swiper-pagination {
+    display: none;
+  }
+  .testimonial {
+    width: fit-content;
+  }
+}
+
 /* CTA */
 
 .cta-section {

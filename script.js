@@ -12,3 +12,18 @@ const handleNav = () => {
   }
 };
 menuBtn.addEventListener("click", handleNav);
+
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  slidesPerView: "auto",
+  centeredSlides: true,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
