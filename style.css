@@ -280,6 +280,7 @@ body[data-navOpen="true"] .nav {
   .nav {
     display: block;
     position: static;
+    background-color: transparent;
   }
 
   .nav__menu {
