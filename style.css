@@ -117,6 +117,7 @@ h2 {
   border-radius: 999px;
   line-height: 12px;
   box-shadow: 0px 0.5rem 0.5rem -0.25rem var(--box-shadow);
+  cursor: pointer;
 }
 
 .btn--primary {
@@ -133,7 +134,6 @@ h2 {
 
 .btn--primary:hover {
   opacity: 0.75;
-  cursor: pointer;
 }
 
 .btn--secondary:hover {
@@ -535,14 +535,33 @@ body[data-navOpen="true"] .nav {
   --gap: 0.5rem;
 }
 
-.footer__form form input[type="email"] {
+.footer__form form .emailInput input {
+  height: 100%;
   padding-inline: 1.25rem;
   font-size: 14px;
   border: none;
   border-radius: 999px;
 }
 
-.footer__form form input[type="button"] {
+.footer__form form .emailInput .result {
+  font-size: 10px;
+  text-align: start;
+  margin-left: 20px;
+  margin-top: 4px;
+  font-style: italic;
+  visibility: hidden;
+}
+
+.footer__form form .emailInput.error .result {
+  color: rgb(255, 100, 100);
+  visibility: visible;
+}
+
+.footer__form form .emailInput.error input {
+  color: rgb(255, 100, 100);
+}
+
+.footer__form form button {
   --box-shadow: hsl(233, 12%, 33%);
 }
 

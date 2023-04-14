@@ -192,13 +192,16 @@
         <div style="--px: 1.5rem" class="container grid">
           <div class="footer__form flex">
             <form class="flex" action="/">
-              <input
-                type="email"
-                name="email"
-                placeholder="Updates in your inbox…"
-                required
-              />
-              <input class="btn btn--primary" type="button" value="Go" />
+              <div class="emailInput">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Updates in your inbox…"
+                  required
+                />
+                <div class="result">Please insert a valid Email</div>
+              </div>
+              <button class="btn btn--primary">Go</button>
             </form>
             <p class="footer__copy">Copyright 2020. All Rights Reserved</p>
           </div>
