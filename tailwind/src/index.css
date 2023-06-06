@@ -1,3 +1,26 @@
 @tailwind base;
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    @apply font-bold text-blue;
+  }
+  h1 {
+    @apply text-[clamp(2.25rem,calc(1.75rem+2.15vw),3.25rem)];
+  }
+  h2 {
+    @apply text-[clamp(1.75rem,calc(1.5rem+1.07vw),2.25rem)];
+  }
+}
+
 @tailwind components;
 @tailwind utilities;
+
+.container {
+  @apply mx-auto max-w-[min(36rem,100%-1rem*2)] lg:max-w-[min(70rem,100%-1rem*2)];
+}
+
+.btn {
+  @apply rounded-full px-8 py-4 text-xs font-bold leading-3 shadow-md;
+}

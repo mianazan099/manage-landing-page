@@ -237,7 +237,7 @@ h2 {
 }
 
 .nav {
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
   position: absolute;
   inset-inline: var(--px);
   top: calc(100% + clamp(2.5rem, calc(2rem + 2.15vw), 3.5rem));
@@ -568,12 +568,12 @@ body[data-navOpen="true"] .nav {
 }
 
 .footer__form form .emailInput.error .result {
-  color: rgb(255, 100, 100);
+  color: hsl(0, 100%, 70%);
   visibility: visible;
 }
 
 .footer__form form .emailInput.error input {
-  color: rgb(255, 100, 100);
+  color: hsl(0, 100%, 70%);
 }
 
 .footer__form form button {
