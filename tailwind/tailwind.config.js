@@ -31,6 +31,10 @@ export default {
       medium: 500,
       bold: 700,
     },
+    backgroundImage: {
+      ctaMobile: "url(./assets/svg/bg-simplify-section-mobile.svg)",
+      ctaDesktop: "url(./assets/svg/bg-simplify-section-desktop.svg)",
+    },
   },
   plugins: [],
 };

@@ -2,6 +2,9 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Hero from "./components/hero";
 import About from "./components/About";
+// import Testimonial from "./components/testimonial";
+import Cta from "./components/Cta";
+import Footer from "./components/Footer";
 
 export default function App() {
   const [open, setOpen] = useState(false);
@@ -16,6 +19,9 @@ export default function App() {
       <Header open={open} setOpen={setOpen} />
       <Hero />
       <About />
+      {/* <Testimonial /> */}
+      <Cta />
+      <Footer />
     </div>
   );
 }
