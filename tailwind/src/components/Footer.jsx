@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {
   IconFacebook,
   IconYouTube,
@@ -8,18 +9,33 @@ import {
 } from "../svg";
 
 function Footer() {
+  const [email, setEmail] = useState("");
+  const [valid, setValid] = useState(true);
+  useEffect(() => {
+    if (!(email.match(/^\S+@\S+\.\S+$/) === null) || email === "") {
+      setValid(true);
+    } else {
+      setValid(false);
+    }
+  }, [email]);
   return (
     <footer className="relative bg-gray-900 text-white">
       <div className="container grid gap-11 pb-24 pt-14 lg:grid-cols-[1fr,1.5fr,1.5fr] lg:pb-14">
         <div className="mx-auto flex gap-4 lg:col-[3] lg:w-full lg:flex-col lg:items-end lg:justify-between">
-          <form className="flex gap-2">
+          <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
             <div className="">
               <input
-                className="h-full rounded-full px-5 text-sm"
+                className={`${
+                  !valid && "text-red ring ring-red focus-visible:outline-none"
+                } h-full rounded-full px-5 text-sm text-gray-900`}
                 // {/* error : text-red */}
                 type="text"
                 placeholder="Update in your inbox..."
                 required
+                value={email}
+                onInput={(e) => {
+                  setEmail(e.target.value);
+                }}
               />
               <div className="invisible ml-5 mt-1 text-start text-[10px] italic">
                 {/* error : text-red */}
@@ -87,88 +103,6 @@ function Footer() {
         </div>
       </div>
     </footer>
-    // <footer className="footer" id="footer">
-    //   <div style="--px: 1.5rem" className="container grid">
-    //     <div className="footer__form flex">
-    //       <form className="flex" action="/">
-    //         <div className="emailInput">
-    //           <input
-    //             type="email"
-    //             name="email"
-    //             placeholder="Updates in your inbox…"
-    //             required
-    //           />
-    //           <div className="result">Please insert a valid Email</div>
-    //         </div>
-    //         <button className="btn btn--primary">Go</button>
-    //       </form>
-    //       <p className="footer__copy">Copyright 2020. All Rights Reserved</p>
-    //     </div>
-
-    //     <div className="footer__link-container flex">
-    //       <ul className="footer__link-menu flex">
-    //         <li className="footer__link">
-    //           <a href="#">Home</a>
-    //         </li>
-    //         <li className="footer__link">
-    //           <a href="#">Pricing</a>
-    //         </li>
-    //         <li className="footer__link">
-    //           <a href="#">Products</a>
-    //         </li>
-    //         <li className="footer__link">
-    //           <a href="#">About Us</a>
-    //         </li>
-    //       </ul>
-    //       <ul className="footer__link-menu flex">
-    //         <li className="footer__link">
-    //           <a href="#">Careers</a>
-    //         </li>
-    //         <li className="footer__link">
-    //           <a href="#">Community</a>
-    //         </li>
-    //         <li className="footer__link">
-    //           <a href="#">Privacy Policy</a>
-    //         </li>
-    //       </ul>
-    //     </div>
-
-    //     <div className="footer__social-container flex">
-    //       <div className="footer__icon-container flex">
-    //         <a className="footer__icon" href="#">
-    //           <svg>
-    //             <use xlink:href="#icon-facebook"></use>
-    //           </svg>
-    //         </a>
-    //         <a className="footer__icon" href="#">
-    //           <svg>
-    //             <use xlink:href="#icon-youtube"></use>
-    //           </svg>
-    //         </a>
-    //         <a className="footer__icon" href="#">
-    //           <svg>
-    //             <use xlink:href="#icon-twitter"></use>
-    //           </svg>
-    //         </a>
-    //         <a className="footer__icon" href="#">
-    //           <svg>
-    //             <use xlink:href="#icon-pinterest"></use>
-    //           </svg>
-    //         </a>
-    //         <a className="footer__icon" href="#">
-    //           <svg>
-    //             <use xlink:href="#icon-instagram"></use>
-    //           </svg>
-    //         </a>
-    //       </div>
-    //       <div className="footer__logo">
-    //         <svg>
-    //           <use xlink:href="#footer-logo"></use>
-    //         </svg>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </footer>
   );
 }
 
