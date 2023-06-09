@@ -13,7 +13,7 @@ function Feature({ num, name, info }) {
 }
 function About() {
   return (
-    <section className="container mt-24 grid gap-14 lg:mt-32 lg:grid-cols-2 lg:gap-32">
+    <section className="about-section container mt-24 grid gap-14 lg:mt-32 lg:grid-cols-2 lg:gap-32">
       <div className="p-3.5 lg:p-0">
         <h2 className="mb-6 lg:mb-8">What's different about Manage?</h2>
         <p className="lg:max-w-[35ch]">

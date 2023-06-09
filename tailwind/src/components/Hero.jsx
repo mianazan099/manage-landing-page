@@ -2,7 +2,7 @@ import { IllustrationIntro } from "../svg";
 
 function Hero() {
   return (
-    <section className="container mt-12 grid gap-8 lg:mt-28 lg:grid-cols-2 lg:items-center">
+    <section className="hero-section container mt-12 grid gap-8 lg:mt-28 lg:grid-cols-2 lg:items-center">
       <div className="lg:col-start-2 lg:col-end-3">
         <IllustrationIntro />
       </div>
